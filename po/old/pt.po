@@ -1,0 +1,387 @@
+# Portuguese Translation Project <traduz@debianpt.org>
+# Simao Cardoso, 2004
+msgid ""
+msgstr ""
+"Project-Id-Version: pppoeconf\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-12-11 12:47+0100\n"
+"PO-Revision-Date: 2004-09-23 01:24+0100\n"
+"Last-Translator: Simão Cardoso <a26774@alunos.det.ua.p>\n"
+"Language-Team: Portuguese <traduz@debianpt.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../pppoeconf:37
+msgid "Please become root before running pppoeconf!"
+msgstr "Por favor autentique-se como root antes de executar o pppoeconf!"
+
+#: ../../pppoeconf:39
+msgid "Press return to continue..."
+msgstr "Pressione enter para continuar..."
+
+#: ../../pppoeconf:87
+#, fuzzy
+msgid ""
+"\n"
+"Most providers send the needed login information per mail. Some providers "
+"describe it in odd ways, assuming the user to input the data in their \"user-"
+"friendly\" setup programs. But in fact, these applications generate usuall "
+"PPP user names and passwords from the entered data. You can find the real "
+"names too and input the correct data in the dialog box.\n"
+"\n"
+"For example, this are methods used some german providers:\n"
+"\n"
+"Sample username (alias \"login\" or \"login name\"): 11111111111\n"
+"\n"
+"T-Online T-DSL:\n"
+"  additional data:\n"
+"    sample T-Onlinenummer: 222222222222\n"
+"    sample Mitbenutzer: 0001\n"
+"\n"
+"  complete username: 111111111111222222222222#0001@t-online.de\n"
+"\n"
+"Telekom Business Online (DSL):\n"
+"\n"
+"  complete username: t-online-com/111111111111@t-online-com.de\n"
+"\n"
+"1und1 uses another scheme (using above example):\n"
+"\n"
+"  complete username: 1und1/11111111111\n"
+"\n"
+"Cyberfun:\n"
+"\n"
+"  complete username: sdt/11111111111\n"
+"\n"
+"Komtel:\n"
+"  additional data:\n"
+"    downstream speed class: 768\n"
+"\n"
+"  complete username: 11111111111@FoniNet-768\n"
+"\n"
+"Net Cologne:\n"
+"\n"
+"  complete username: 11111111111@netcologne.de\n"
+"\n"
+"Q-DSL:\n"
+"\n"
+"  complete username: 11111111111@q-dsl.de\n"
+"\n"
+"Versatel:\n"
+"\n"
+"  complete username: 11111111111@VersaNet-1024k\n"
+"\n"
+"Webnetix:\n"
+"\n"
+"  complete username: sdt/11111111111\n"
+msgstr ""
+"\n"
+"A maioria dos provedores enviam a informação de login necessária por e-mail. "
+"Alguns provedores descrevem-nas de maneiras estranhas, assumindo que o "
+"utilizador irá introduzir os dados nos seus programas de configuração "
+"\"amigáveis\\\". Mas, de facto, estas aplicações geram nomes de utilizador e "
+"senhas PPP normais a partir dos dados introduzidos. Você pode encontrar os "
+"nomes verdadeiros também e introduzir os dados correctos na caixa de dialogo."
+"\\n\\nPor exemplo, estes são os métodos que alguns provedores alemães "
+"utilizam :\n"
+"\n"
+"T-Online T-DSL:\n"
+"  dados adicionais:\n"
+"    T-Onlinenummer exemplo: 222222222222\n"
+"    Mitbenutzer exemplo: 0001\n"
+"\n"
+"  nome de utilizador completo: 111111111111222222222222#0001@t-online.de\n"
+"\n"
+"Telekom Business Online (DSL):\n"
+"\n"
+"  nome de utilizador completo: t-online-com/111111111111@t-online-com.de\n"
+"\n"
+"1und1 usa outro esquema (usando o exemplo acima):\n"
+"\n"
+"  nome de utilizador completo: 1und1/11111111111\n"
+"\n"
+"Cyberfun:\n"
+"\n"
+"  nome de utilizador completo: sdt/11111111111\n"
+"\n"
+"Komtel:\n"
+"  dados adicionais:\n"
+"    classe de velocidade de downstream: 768\n"
+"\n"
+"  nome de utilizador completo: 11111111111@FoniNet-768\n"
+"\n"
+"Net Cologne:\n"
+"\n"
+"  nome de utilizador completo: 11111111111@netcologne.de\n"
+"\n"
+"Q-DSL:\n"
+"\n"
+"  nome de utilizador completo: 11111111111@q-dsl.de\n"
+"\n"
+"Versatel:\n"
+"\n"
+"  nome de utilizador completo: 11111111111@VersaNet-1024k\n"
+"\n"
+"Webnetix:\n"
+"\n"
+"  nome de utilizador completo: sdt/11111111111\n"
+
+#: ../../pppoeconf:147
+msgid "Or press ESC to abort here."
+msgstr "Ou pressinone ESC para terminar aqui."
+
+#: ../../pppoeconf:150
+#, fuzzy, sh-format
+msgid ""
+"I found $number ethernet device:\n"
+"$list\n"
+"\n"
+"Are all your ethernet interfaces listed above?\n"
+"(If No, modconf will be started so you can load the card drivers manually).\n"
+"\n"
+"$escmsg"
+msgid_plural ""
+"I found $number ethernet devices:\n"
+"$list\n"
+"\n"
+"Are all your ethernet interfaces listed above?\n"
+"(If No, modconf will be started so you can load the card drivers manually).\n"
+"\n"
+"$escmsg"
+msgstr[0] ""
+"Foram encontrado(s) $number dispositivo(s) ethernet:\\n$list\\n\\nEstão "
+"acima listadas todas as suas interfaces ethernet?\\n (Caso não estejam, o "
+"modconf será iniciado para que possa carregar os controladores da(s) placa"
+"(s) manualmente).\\n\\nOu pressione Ctrl-C para abortar aqui."
+msgstr[1] ""
+"Foram encontrado(s) $number dispositivo(s) ethernet:\\n$list\\n\\nEstão "
+"acima listadas todas as suas interfaces ethernet?\\n (Caso não estejam, o "
+"modconf será iniciado para que possa carregar os controladores da(s) placa"
+"(s) manualmente).\\n\\nOu pressione Ctrl-C para abortar aqui."
+
+#: ../../pppoeconf:165
+msgid "ALL DEVICES FOUND?"
+msgstr "ENCONTROU TODOS OS DISPOSITIVOS?"
+
+#: ../../pppoeconf:184
+msgid "SCANNING DEVICE"
+msgstr "PROCURANDO DISPOSITIVO"
+
+#: ../../pppoeconf:185
+#, sh-format
+msgid "Looking for PPPoE Access Concentrator on $iface..."
+msgstr "A Procurar Concentrador de Acesso PPPoE em $iface..."
+
+#: ../../pppoeconf:187
+msgid "(multi-modem mode)"
+msgstr ""
+
+#: ../../pppoeconf:203
+msgid "NOT CONNECTED"
+msgstr "NÂO LIGADO"
+
+#: ../../pppoeconf:205
+#, fuzzy, sh-format
+msgid ""
+"Sorry, I scanned $number interface, but the Access Concentrator of your "
+"provider did not respond. Please check your network and modem cables. "
+"Another reason for the scan failure may also be another running pppoe "
+"process which controls the modem."
+msgid_plural ""
+"Sorry, I scanned $number interfaces, but the Access Concentrator of your "
+"provider did not respond. Please check your network and modem cables. "
+"Another reason for the scan failure may also be another running pppoe "
+"process which controls the modem."
+msgstr[0] ""
+"Desculpe, $number interfaces foram testadas, mas o Concentrador de Acesso do "
+"seu provedor não respondeu. Por favor verifique os seus cabos de rede e "
+"modem.Outra razão para a falha da procura pode ser outro processo pppoe em "
+"execuçãoque controla o modem."
+msgstr[1] ""
+"Desculpe, $number interfaces foram testadas, mas o Concentrador de Acesso do "
+"seu provedor não respondeu. Por favor verifique os seus cabos de rede e "
+"modem.Outra razão para a falha da procura pode ser outro processo pppoe em "
+"execuçãoque controla o modem."
+
+#: ../../pppoeconf:213
+msgid "DSL CONNECTION FOUND"
+msgstr "LIGAÇÃO DSL ENCONTRADA"
+
+#: ../../pppoeconf:214
+#, sh-format
+msgid ""
+"I found an Access Concentrator on $iface. Should I setup PPPOE for this "
+"connection?"
+msgstr ""
+"Foi encontrado um Concentrador de Acesso em $iface. Devo configurar PPPoE "
+"para esta ligação?"
+
+#: ../../pppoeconf:254
+msgid "OKAY TO MODIFY"
+msgstr "OK PARA MODIFICAR"
+
+#: ../../pppoeconf:255
+#, fuzzy, sh-format
+msgid ""
+"If you continue with this program, the configuration file $OPTSFILE will be "
+"modified. Please make sure that you have a backup copy before saying Yes.\n"
+"\n"
+"Continue with configuration?"
+msgstr ""
+"Caso continue este programa, o ficheiro de configuração $OPTSFILE será "
+"modificado. Por favor, certifique-se de que tem uma cópia de backup antes de "
+"dizer Sim.\\n\\nContinuar a configuração?"
+
+#: ../../pppoeconf:267
+msgid "POPULAR OPTIONS"
+msgstr "OPÇÕES POPULARES"
+
+#: ../../pppoeconf:268
+msgid ""
+"Most people using popular dialup providers prefer the options 'noauth' and "
+"'defaultroute' in their configuration and remove the 'nodetach' option. "
+"Should I check your configuration file and change these settings where "
+"neccessary?"
+msgstr ""
+"A maioria das pessoas que usam provedores dialup populares preferem as "
+"opções 'noauth' e 'defaultroute' nas configurações e removem a opção "
+"'nodetach'. Devo verificar o ficheiro de configuraçao e modificar essas "
+"configurações onde necessário ?"
+
+#: ../../pppoeconf:282
+msgid "ENTER USERNAME"
+msgstr "INSIRA O NOME DE UTILIZADOR"
+
+#: ../../pppoeconf:283
+msgid ""
+"Please enter the username which you usually need for the PPP login to your "
+"provider in the input box below. If you wish to see the help screen, delete "
+"the username and press OK."
+msgstr ""
+"Por favor insira na caixa de entrada abaixo o nome de utilizador que "
+"normalmente precisa para fazer o login PPP no seu provedor. Se desejar ver o "
+"texto de ajuda apague o nome de utilizador e pressione OK."
+
+#: ../../pppoeconf:305
+msgid "ENTER PASSWORD"
+msgstr "INSIRA A PASSWORD"
+
+#: ../../pppoeconf:306
+#, fuzzy
+msgid ""
+"Please enter the password which you usually need for the PPP login to your "
+"provider in the input box below.\n"
+"\n"
+"NOTE: you can see the password in plain text while typing."
+msgstr ""
+"Por favor insira na caixa de entrada abaixo a password que normalmente "
+"precisa para o login PPP no seu provedor.\\n\\nNOTA:pode ver a password em "
+"texto puro enquanto a digita."
+
+#: ../../pppoeconf:327
+msgid "USE PEER DNS"
+msgstr "USAR PEER DNS"
+
+#: ../../pppoeconf:328
+msgid ""
+"You need at least one DNS IP addresses to resolve the normal host names. "
+"Normally your provider sends you addresses of useable servers when the "
+"connection is established. Would you like to add these addresses "
+"automaticaly to the list on nameservers in your local /etc/resolv.conf file? "
+"(recommended)"
+msgstr ""
+"Precisa de pelo menos um endreço IP de DNS para resolver os normais nomes de "
+"host. Normalmente o seu provedor enviar-lhe-à endereços de servidores "
+"utilizáveis quando a ligação é estabelecida. Gostaria de adicionar estes "
+"endereços automaticamente na lista de servidores de nomes no seu ficheiro "
+"local /etc/resolv.conf ? (recomendado)"
+
+#: ../../pppoeconf:337
+msgid "LIMITED MSS PROBLEM"
+msgstr "PROBLEMA DE MSS LIMITADO"
+
+#: ../../pppoeconf:338
+#, fuzzy
+msgid ""
+"Many providers have routers that do not support TCP packets with a MSS "
+"higher than 1460. Usually, outgoing packets have this MSS when they go "
+"trough one real Ethernet link with the default MTU size (1500). "
+"Unfortunately, if you are forwarding packets from another hosts (ie. doing "
+"masquerading) the MSS may be increased depending on the packet size and the "
+"route to the client hosts. So your client machines won't be able to connect "
+"to some sites. There is a solution: the maximum MSS can be limited by pppoe. "
+"You can find more details about this issue in the pppoe documentation.\n"
+"\n"
+"Should pppoe clamp MSS at 1452 bytes?\n"
+"\n"
+"If unsure, say yes.\n"
+"\n"
+"(If you still get problems described above, try setting to 1412 in the dsl-"
+"provider file.)"
+msgstr ""
+"Muitos provedores têm equipamento que não suporta pacotes IP com um MSS "
+"maior que 1460. Normalmente os pacotes têm este MSS quando passampor uma "
+"verdadeira ligação Ethernet com o normal tamanho MTU (1500). Infelizmente, "
+"se está encaminhando pacotes de outras máquinas (ou seja, fazendo "
+"masquerading) o MSS pode aumentar dependendo do tamanho do pacote e o "
+"caminho para a máquina cliente. Assim, as máquinas cliente não poderão "
+"conectar-se a alguns sites. Existe uma solução: o tamanho MSS máximopode ser "
+"limitado pelo pppoe. Pode encontrar mais detalhes sobre este problema na "
+"documentação do pppoe.\\n\\nDeve o pppoe limitar o tamanho MSS nos 1452 "
+"bytes ?\\n\\nEm caso de dúvida, responda sim.\\n\\n(Caso continue obtendo "
+"problemas como os descritos acima, tente definir o valor para 1412 no "
+"ficheiro dsl-provider.)"
+
+#: ../../pppoeconf:364
+msgid "DONE"
+msgstr "FEITO"
+
+#: ../../pppoeconf:365
+msgid ""
+"Your PPPD is configured now. Would you like to start the connection at boot "
+"time?"
+msgstr ""
+"O PPPD está agora configurado. Gostaria de iniciar a ligação na "
+"inicialização do sistema?"
+
+#: ../../pppoeconf:379
+msgid "ESTABLISH A CONNECTION"
+msgstr "ESTABLEÇA UMA LIGAÇÃO"
+
+#: ../../pppoeconf:380
+#, fuzzy
+msgid ""
+"Now, you can make a DSL connection with \"pon dsl-provider\" and terminate "
+"it with \"poff\". Would you like to start the connection now?"
+msgstr ""
+"Agora pode fazer uma ligacao DSL com \\\"pon dsl-provider\\\" e termina-la "
+"com \\\"poff\\\". Deseja iniciar a ligação agora?"
+
+#: ../../pppoeconf:386
+msgid "CONNECTION INITIATED"
+msgstr "LIGAÇÃO INICIADA"
+
+#: ../../pppoeconf:387
+#, fuzzy
+msgid ""
+"The DSL connection has been triggered. You can use the \"plog\" command to "
+"see the status or \"ip addr show ppp0\" for general interface info."
+msgstr ""
+"A ligação DSL foi establecida. Pode usar o comando \\\"plog\\\" para "
+"verificar o estado ou \\\"ip addr show ppp0\\\" para informações gerais do "
+"interface."
+
+#: ../../pppoeconf:396
+msgid "NO INTERFACE FOUND"
+msgstr "NENHUM INTERFACE ENCONTRADO"
+
+#: ../../pppoeconf:397
+msgid ""
+"Sorry, no working ethernet card could be found. If you do have an interface "
+"card which was not autodetected so far, you probably wish to load the driver "
+"manually using the modconf utility. Run modconf now?"
+msgstr ""
+"Desculpe, nenhuma placa ethernet funcional pôde ser encontrada, Caso tenha "
+"uma placa que não foi auto-detectada até agora, provavelmente deseja "
+"carregar o controlador para a mesma manualmente usando o utilitário modconf. "
+"Executar o modconf agora ?"

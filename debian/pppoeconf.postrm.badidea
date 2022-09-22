@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# remove useless empty script on removal in any case
+if (test -f /etc/ppp/ip-up.d/000usepeerdns && test -z "`cat /etc/ppp/ip-up.d/000usepeerdns`" ) ; then
+   rm -f /etc/ppp/ip-up.d/000usepeerdns /etc/ppp/ip-up.d/000usepeerdns.dpkg*
+fi
+
+#DEBHELPER#

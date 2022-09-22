@@ -1,0 +1,145 @@
+<!doctype refentry PUBLIC "-//OASIS//DTD DocBook V4.1//EN" [
+
+<!-- Process this file with docbook-to-man to generate an nroff manual
+     page: `docbook-to-man manpage.sgml > manpage.1'.  You may view
+     the manual page with: `docbook-to-man manpage.sgml | nroff -man |
+     less'.  A typical entry in a Makefile or Makefile.am is:
+
+manpage.1: manpage.sgml
+	docbook-to-man $< > $@
+  -->
+
+  <!-- Fill in your name for FIRSTNAME and SURNAME. -->
+  <!ENTITY dhfirstname "<firstname>Eduard</firstname>">
+  <!ENTITY dhsurname   "<surname>Bloch</surname>">
+  <!-- Please adjust the date whenever revising the manpage. -->
+  <!ENTITY dhdate      "<date>may 27, 2007</date>">
+  <!-- SECTION should be 1-8, maybe w/ subsection other parameters are
+       allowed: see man(7), man(1). -->
+  <!ENTITY dhsection   "<manvolnum>8</manvolnum>">
+  <!ENTITY dhemail     "<email>blade@debian.org</email>">
+  <!ENTITY dhusername  "Eduard Bloch">
+  <!ENTITY dhemail2    "<email>reg@evolix.fr</email>">
+  <!ENTITY dhusername2 "Gregory Colpart">
+  <!ENTITY dhucpackage "<refentrytitle>PPPOECONF</refentrytitle>">
+  <!ENTITY dhpackage   "pppoeconf">
+
+  <!ENTITY debian      "<productname>Debian GNU/Linux</productname>">
+  <!ENTITY gnu         "<acronym>GNU</acronym>">
+]>
+
+<refentry>
+  <refentryinfo>
+    <address>
+      &dhemail;
+    </address>
+    <author>
+      &dhfirstname;
+      &dhsurname;
+    </author>
+    <copyright>
+      <year>2001</year>
+      <holder>&dhusername;</holder>
+    </copyright>
+    <copyright>
+      <year>2007</year>
+      <holder>&dhusername2;</holder>
+    </copyright>
+    &dhdate;
+  </refentryinfo>
+  <refmeta>
+    &dhucpackage;
+
+    &dhsection;
+  </refmeta>
+  <refnamediv>
+    <refname>&dhpackage;</refname>
+
+    <refpurpose>configures a PPPoE (ADSL) connection</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>&dhpackage;</command>
+    
+      <arg><option><replaceable>-nox</replaceable></option></arg>
+      <arg><option><replaceable>iface</replaceable></option></arg>
+
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  <refsect1>
+    <title>DESCRIPTION</title>
+
+    <para>The <command>&dhpackage;</command> program is user-friendly dialog
+     based setup tool for <command>pppd</command> (and <command>pppoe</command> if
+     needed). It will look for existing ethernet cards and look for ADSL
+     hardware connected to one of them. You can add an interface name
+     <option>iface</option> to force &dhpackage; to use it. Then it will get
+     some login info and do some minor modifications to make working
+     settings. Note that you can use ESC key to exit program when you want.</para>
+
+  </refsect1>
+  <refsect1>
+    <title>OPTIONS</title>
+
+      <variablelist>
+       <varlistentry>
+        <term><option>-nox</option></term>
+        <listitem>
+          <para>Force ncurses use.</para>
+        </listitem>
+       </varlistentry>
+      </variablelist>
+  </refsect1>
+  <refsect1>
+    <title>FILES</title>
+
+    <para><filename>/etc/ppp/peers/dsl-provider</filename> is pppd options file
+    for your dsl provider.</para>
+    <para><filename>/etc/ppp/pap-secrets</filename> and
+    <filename>/etc/ppp/chap-secrets</filename> are described in pppd documentation.
+    &dhpackage; may add lines to theses files.</para>
+    <para><filename>/etc/ppp/ip-up.d/0clampmss</filename> and
+    <filename>/etc/ppp/ip-down.d/0clampmss</filename> are used to clamp MSS if
+    needed.</para>
+    <para><filename>/etc/network/interfaces</filename> is network interface file
+    for your system.</para>
+
+  </refsect1>
+
+  <refsect1>
+    <title>SEE ALSO</title>
+
+    <para>pppd(8), interfaces(5), pon(1) and pppoe(8).</para>
+
+  </refsect1>
+  <refsect1>
+    <title>AUTHOR</title>
+
+    <para>This manual page was originally written by &dhusername; (&dhemail;)
+     and now maintained by &dhusername2; (&dhemail2;) for the &debian; system
+     (but may be used by others).  This document is free software; you can
+     redistribute it and/or modify it under the terms of the &gnu; General
+     Public License as published by the Free Software Foundation; either version
+     2 of the License, or (at your option) any later version.</para>
+    <para>On Debian systems, the complete text of the GNU General Public
+     License can be found in /usr/share/common-licenses/GPL.</para>
+
+  </refsect1>
+</refentry>
+
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-omittag:t
+sgml-shorttag:t
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:2
+sgml-indent-data:t
+sgml-parent-document:nil
+sgml-default-dtd-file:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

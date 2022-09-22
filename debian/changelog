@@ -1,0 +1,517 @@
+pppoeconf (1.21+nmu2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Remove -A option from pppoe-discovery (Closes: #990978).
+    It had no function anymore and was removed in new versions.
+    Thanks: Michael Prokop
+  * Apply two manpage corrections (Closes: #814354).
+    Thanks: Christoph Biedl
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Thu, 22 Jul 2021 20:51:01 +0200
+
+pppoeconf (1.21+nmu1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Fri, 01 Jan 2021 16:42:10 +0100
+
+pppoeconf (1.21) unstable; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * Add missing package dependency on ifupdown.
+  * Follow ifupdown and switch from net-tools' ifconfig to iproute2, adapt
+    dependencies accordingly (Closes: #728647).
+
+  [ Gregory Colpart ]
+  * Warn about changes in pap/chap-secrets files and comment old lines instead
+    of remove (Closes: #697939).
+  * Update to standards version 3.9.5, no further required changes. 
+  * Add build-indep and build-arch targets (fix lintian warning).
+  * Update POT and PO files.
+  * Update japanese translation (Closes: #732174)
+    Thanks to Kenshi Muto <kmuto@debian.org>
+  * Update russian translation (Closes: #732192)
+    Thanks to Yuri Kozlov <yuray@komyakino.ru> 
+  * Update slovene language
+    Thanks to Jure Cuhalev <gandalf@owca.info>
+
+ -- Gregory Colpart <reg@debian.org>  Fri, 27 Dec 2013 03:03:25 +0100
+
+pppoeconf (1.20) unstable; urgency=low
+
+  * Fix pppoeconf.desktop (Closes: #590202) 
+  * Drop depends on modconf (Closes: #613284) 
+    Thanks to Alexander Reichle-Schmehl <alexander@schmehl.info>
+  * Update POT and PO files. 
+  * Update russian translation (Closes: #562701)
+    Thanks to Yuri Kozlov <yuray@komyakino.ru> 
+  * Update japanese translation (Closes: #622847)
+    Thanks to Kenshi Muto <kmuto@debian.org> 
+  * Update french translation
+    Thanks to debian-l10n-french team!
+  * Update to standards version 3.9.2, no further required changes. 
+
+ -- Gregory Colpart <reg@debian.org>  Sat, 23 Apr 2011 11:32:03 +0200
+
+pppoeconf (1.19) unstable; urgency=low
+
+  * Add support for gksu when X is enabled. (Closes: #548231)
+  * Change my email address, as I am now Debian developer. 
+  * Bump debhelper compat level to 5. 
+  * Update to standards version 3.8.3, no further required changes. 
+  * Set proper .desktop categories. (Closes: #512893)
+  * Add support for Gigabit network with Jumbo frames. Thanks to Kunihiko IMAI
+    <bak@d2.dion.ne.jp>. (Closes: #499127) 
+  * Add ${misc:Depends} in Depends: to avoid debhelper-but-no-misc-depends
+    lintian report. 
+  * Add "set -e" to postinst script to avoid maintainer-script-ignores-errors
+    lintian report. 
+
+ -- Gregory Colpart <reg@debian.org>  Sat, 07 Nov 2009 22:34:41 +0100
+
+pppoeconf (1.18) unstable; urgency=low
+
+  * Fix two bashisms (read without variable).
+  * Update translations in .desktop file (thanks to Jani Monoses
+    <jani@ubuntu.com>).
+  * Fix confusion between binary-arch and binary-indep in rules. 
+  * Update to standards version 3.8.0, no further required changes. 
+  * Avoid duplication of /pty/ lines in dsl-provider when using pppoeconf
+    several times ((problem was only in non-kernel-pppoe mode).
+
+ -- Gregory Colpart (evolix) <reg@evolix.fr>  Sun, 27 Jul 2008 03:06:31 +0200
+
+pppoeconf (1.17) unstable; urgency=low
+
+  * Update menu file to new section Applications/System/Administration.
+  * Update on .desktop file (Encoding and Categories fields, french translations).
+  * Minor update on copyright file.
+  * Correct script for removing MSS iptables rules. (Closes: #434137)
+  * Add Vcs-* fields in debian/control.
+
+ -- Gregory Colpart (evolix) <reg@evolix.fr>  Sat, 11 Aug 2007 03:12:04 +0200
+
+pppoeconf (1.16) unstable; urgency=low
+
+  * Fix changing usepeerdns enabled->disabled (Closes: #426392)
+  * Fix stupid bashism (Closes: #426570)
+  * Make uniform treatments of dialog exit status
+  * Make uniform grep/sed intructions
+  * Add precisions to manpage (Closes: #426619) 
+
+ -- Gregory Colpart (evolix) <reg@evolix.fr>  Thu, 31 May 2007 02:03:27 +0200
+
+pppoeconf (1.15) unstable; urgency=low
+
+  * Fix regex to match spaces in interfaces file (Closes: #422381)
+  * Fix path of pppoe binary
+  * Add -nox option to force ncurses use
+  * Improve manpage content and clean generation
+
+ -- Gregory Colpart (evolix) <reg@evolix.fr>  Sun, 27 May 2007 22:30:26 +0200
+
+pppoeconf (1.14) unstable; urgency=low
+
+  * Add fallback when no pppoe support. (Closes: #404322)
+  * Add support for a dot in interface name. (Closes: #419695)
+  * Add year 2007 in pppoeconf and copyright file.
+  * Add some comments in pppoeconf.
+  * Use temp dir in /tmp instead of /etc/ppp.
+
+ -- Gregory Colpart (evolix) <reg@evolix.fr>  Wed, 18 Apr 2007 04:29:01 +0200
+
+pppoeconf (1.13) unstable; urgency=low
+
+  * Debconf translation: Russian added. (Closes: #405423)
+
+ -- Gregory Colpart (evolix) <reg@evolix.fr>  Thu, 18 Jan 2007 09:24:22 +0100
+
+pppoeconf (1.12) unstable; urgency=low
+
+  * Correct missing backslash (Closes: #384777)
+  * Clean debian/copyright file
+  * Remove debhelper from Build-Depends-Indep
+  * Delete zenity from Suggests
+  * Fix bug number typo in last changelog
+
+ -- Gregory Colpart (evolix) <reg@evolix.fr>  Sun,  3 Sep 2006 10:11:55 +0200
+
+pppoeconf (1.11) unstable; urgency=low
+
+  * New maintainer (Closes: #330421)
+  * Add notice for PADO packets timeout in README.Debian (Closes: #286381)
+  * Add '-t mangle' for TCPMSS iptables rule (Closes: #315166)
+  * Remove usepeerdns in default file (Closes: #319285)
+  * Add notice for ppp persistent connections in README.Debian (Closes: #169684)
+  * Apply patch to ensure valid interfaces file. Thanks to Filipus Klutiero
+    <cheal@hotpop.com>. (Closes: #371876)
+  * Update fr.po (Closes: #374561)
+  * Delete useless 000usepeerdns script.
+  * Import patch from Ubuntu (1.10ubuntu2 version)
+  * remove broken support of zenity
+  * fix bug with namehelp.txt (unable to display if created too soon)
+  * add dh_testroot in debian/rules
+
+ -- Gregory Colpart (evolix) <reg@evolix.fr>  Mon, 24 Jul 2006 00:36:58 +0200
+
+pppoeconf (1.10) unstable; urgency=low
+
+  * QA upload.
+  * Add support to zenity.
+  * Fix regular expressions to handle auto word in interfaces file. Thanks
+    to Filipus Klutiero <cheal@hotpop.com> for the patch. Closes: #334361.
+  * Don't use debian/po for translation and use a Makefile to do all the
+    work for us. Thanks to Thomas Huriaux <thomas.huriaux@kti.ae.poznan.pl>
+    for the patch. Closes: #262730.
+  * Add dependency of modconf. Closes: #315884.
+  * Bump Standards-Version to 3.7.2 (no changes).
+  * Add debhelper in Build-Depends field since it's used in clean target.
+
+ -- Otavio Salvador <otavio@debian.org>  Sat, 27 May 2006 11:11:34 -0300
+
+pppoeconf (1.9) unstable; urgency=medium
+
+  * QA upload.
+  * pppoeconf.8.sgml: Relicense under the GPL.  Closes: #346385.
+  * Hyphenate user-friendly.  Closes: #341066.
+  * Switch to debhelper 4.
+  * Conforms to Standards version 3.6.2.
+
+ -- Matej Vela <vela@debian.org>  Sun, 22 Jan 2006 11:15:31 +0100
+
+pppoeconf (1.8) unstable; urgency=low
+
+  * orphaning package, changed Maintainer
+  * applied pppoeconf_1.6ubuntu2_unknown.patch from Ubuntu to add the nic-
+    prefixes to non-eth device names (closes: #330150)
+  * french typo fix from Simon Paillard (closes: #308512)
+
+ -- Eduard Bloch <blade@debian.org>  Wed, 28 Sep 2005 00:11:04 +0200
+
+pppoeconf (1.7) unstable; urgency=medium
+
+  * adding automatic activation of the ethernet interface to
+    /etc/network/interfaces (closes: #305941, #306331)
+  * minor gramatic fixes in the German translation, typo fixes by Sven
+    Dreyer <sven.AT.dreyer-net.de> (closes: #306100)
+  * removed a redundant dialog call
+
+ -- Eduard Bloch <blade@debian.org>  Sat, 30 Apr 2005 18:56:22 +0200
+
+pppoeconf (1.6) unstable; urgency=high
+
+  * replaced -p with -o in the iptables call (stupid typo, closes: #304219)
+
+ -- Eduard Bloch <blade@debian.org>  Mon, 11 Apr 2005 22:27:17 +0200
+
+pppoeconf (1.5) unstable; urgency=high
+
+  * now properly moved the desktop file to a fd.o compliant location and used
+    Categories to declare its group (closes: #301441)
+
+ -- Eduard Bloch <blade@debian.org>  Sat, 26 Mar 2005 01:46:31 +0100
+
+pppoeconf (1.4) unstable; urgency=medium
+
+  * fixed bashisms (echo -e) and added versioned dependency on sed (>= 3.95),
+    thanks to Colin Watson for pointing this out
+  * moved desktop file from Internet to the System section (closes: #291326)
+  * added -o $PPP_IFACE to MSS clamping setup command and added
+    ip-down.d/0clampss creation which removes MSS clamping rule(s) on the
+    particular interface (closes: #299451)
+
+ -- Eduard Bloch <blade@debian.org>  Sat,  5 Mar 2005 22:41:05 +0100
+
+pppoeconf (1.3) unstable; urgency=medium
+
+  * transition to the new ppp-on-boot method, adding a profile to the
+    interfaces file (closes: #298223)
+
+ -- Eduard Bloch <blade@debian.org>  Sat,  5 Mar 2005 13:16:40 +0100
+
+pppoeconf (1.2) unstable; urgency=medium
+
+  * sed command changes to work in-place and delete lines completely where
+    they are no longer needed (closes: #296778)
+
+ -- Eduard Bloch <blade@debian.org>  Fri, 18 Feb 2005 01:12:39 +0100
+
+pppoeconf (1.1) unstable; urgency=high
+
+  * do not stumble over PPP usernames with slashes within (closes: #295315)
+  * minor English language bugs fixed (closes: #291865)
+
+ -- Eduard Bloch <blade@debian.org>  Fri, 18 Feb 2005 01:07:21 +0100
+
+pppoeconf (1.0.17) unstable; urgency=medium
+
+  * documented the potential need to fix the 0clampmss in README.Debian
+    (closes: #289001)
+
+ -- Eduard Bloch <blade@debian.org>  Thu, 06 Jan 2005 19:59:16 +0100
+
+pppoeconf (1.0.16) unstable; urgency=high
+
+  * Now really changed the dependency (closes: #284594)
+
+ -- Eduard Bloch <blade@debian.org>  Sun, 19 Dec 2004 19:05:00 +0100
+
+pppoeconf (1.0.15) unstable; urgency=high
+
+  * Changed dependency on gettext to gettext-base (closes: #285496)
+
+ -- Eduard Bloch <blade@debian.org>  Thu, 16 Dec 2004 17:44:09 +0100
+
+pppoeconf (1.0.14) unstable; urgency=low
+
+  * Translation overhaul, using gettext instead of bash features. Using
+    the common gettext format in po files now (edited the submitted
+    files to adapt them to the new syntax). Thanks to Denis Barbier and
+    all translators (closes: #281849)
+  * changed hints in the menu to "Network" (closes: #284594)
+  * added an icon (based on gnome-modem.png, closes: #276035)
+
+ -- Eduard Bloch <blade@debian.org>  Sat, 11 Dec 2004 13:44:46 +0100
+
+pppoeconf (1.0.13) unstable; urgency=low
+
+  * inserting the MSS clamping rule as the first one
+  * using -U in a repeated run to work around potential problems with
+    "special" modems or ISPs (closes: #273909)
+  * added zh_TW.po (closes: #276190)
+
+ -- Eduard Bloch <blade@debian.org>  Sun, 07 Nov 2004 21:41:07 +0100
+
+pppoeconf (1.0.12) unstable; urgency=medium
+
+  * Yet Another Candidate For Testing 
+  * checks the availability of the pppoe kernel driver by looking at procfs
+    instead of the module state (closes: #279428)
+
+ -- Eduard Bloch <blade@debian.org>  Thu, 04 Nov 2004 15:50:46 +0100
+
+pppoeconf (1.0.11) unstable; urgency=low
+
+  * moved chmod +x to chmod 755 - which otherwise would break because of the
+    umask used above. Now really closes: #266635. Yeah, sorry again.
+
+ -- Eduard Bloch <blade@debian.org>  Fri, 08 Oct 2004 09:04:04 +0200
+
+pppoeconf (1.0.10) unstable; urgency=low
+
+  * added replacedefaultroute to the options file template (closes: #275168)
+  * added the PT translation from Simão Pedro Cardoso (closes: Bug#275036)
+
+ -- Eduard Bloch <blade@debian.org>  Sat, 25 Sep 2004 19:07:46 +0200
+
+pppoeconf (1.0.8sarge9) testing-proposed-updates; urgency=low
+
+  * t-p-u upload
+
+ -- Eduard Bloch <blade@debian.org>  Sat, 25 Sep 2004 19:03:42 +0200
+
+pppoeconf (1.0.9) unstable; urgency=medium
+
+  * The "eat your own dog food" release
+  * faster scan, skipping devices that would not be used anyways
+  * corrected the setting of interface name on reconfiguration
+
+ -- Eduard Bloch <blade@debian.org>  Sat, 18 Sep 2004 10:16:19 +0200
+
+pppoeconf (1.0.8) unstable; urgency=low
+
+  * Setting group and permissions of self-created dsl-provider file according
+    to base-passwd documentation (closes: #267775)
+
+ -- Eduard Bloch <blade@debian.org>  Wed, 25 Aug 2004 17:24:12 +0200
+
+pppoeconf (1.0.7) unstable; urgency=high
+
+  * Fixing an obvious bug introduced in the last version
+
+ -- Eduard Bloch <blade@debian.org>  Thu, 19 Aug 2004 01:36:35 +0200
+
+pppoeconf (1.0.6) unstable; urgency=medium
+
+  * added ifconfig ... up to work around pppoe-discovery limitation
+  * don't ask about dialing after reboot when it's run on KNOPPIX
+  * de.po: typo fixes
+
+ -- Eduard Bloch <blade@debian.org>  Wed, 18 Aug 2004 17:18:52 +0200
+
+pppoeconf (1.0.5) unstable; urgency=medium
+
+  * Making the 0clampmss file executable (closes: #266635)
+
+ -- Eduard Bloch <blade@debian.org>  Wed, 18 Aug 2004 17:05:53 +0200
+
+pppoeconf (1.0.4) unstable; urgency=low
+
+  * exluding irlan devices from the scan list because of the old kernel bug
+    freezing the processes (closes: #252523)
+  * Kernel space pppoe support based on patch from Marco d'Itri with some
+    fixes. A template of the dsl-provider file is generated if the pppoe
+    package was not installed before (closes: #259855)
+  * not changing the lcp-echo-interval, relying on defaults (closes: #243137)
+  * rewrote XSI:isms in the postinst file (closes: #256104). The bashisms in
+    the pppoeconf code have to stay there - it is a bash script and uses
+    bash-specific features (i18n)
+
+ -- Eduard Bloch <blade@debian.org>  Sun, 18 Jul 2004 12:21:56 +0200
+
+pppoeconf (1.0.3) unstable; urgency=low
+
+  * removed 000userpeerdns from the package and added a postinst script that
+    deletes obsolete versions of the script (from Woody and from previous
+    experiments intended to deactivate it; closes: #252262)
+
+ -- Eduard Bloch <blade@debian.org>  Sun, 30 May 2004 12:44:08 +0200
+
+pppoeconf (1.0.2) unstable; urgency=low
+
+  * fixed filename mask to match any interface name (closes: #251642, #170554)
+  * inserted the interpreter into 000userpeerdns (closes: #213685)
+  * Included su-to-root as alternative suid wrapper which is provided by
+    the menu package nowadays (closes: #244882)
+  * no longer offering to change lcp-echo-interval, the default made
+    more sense (closes: #241137)
+  * Replaced Ctrl-C hint with ESC in the whiptail message (closes: #218990)
+  * MSS/MTU problem description fixed (closes: #207346)
+  * Acknowledge previous NMU, ja.po is there (closes: #222309)
+  * moved po to debian/po to pass it to debconf translation team
+
+ -- Eduard Bloch <blade@debian.org>  Sun, 30 May 2004 01:44:46 +0200
+
+pppoeconf (1.0.1) unstable; urgency=low
+
+  * NMU (I asked maintainer 4 days ago).
+  * Apply Japanese translation (fixed: Bug#222309).
+
+ -- Kenshi Muto <kmuto@debian.org>  Mon,  3 May 2004 11:19:10 +0900
+
+pppoeconf (1.0) unstable; urgency=low
+
+  * truncated 000usepeerdns to become useless and set dependency on ppp
+    package that provides 0000usepeerdns. The script is finaly removed in
+    postrm if not changed by the user in the meantime. Closes: #212756
+  * new version number, enough of sub-release insanity
+
+ -- Eduard Bloch <blade@debian.org>  Thu, 25 Sep 2003 23:40:17 +0200
+
+pppoeconf (0.9.10.10) unstable; urgency=low
+
+  * Slovenian translation, thanks to  Jure Cuhalev <gandalf@owca.info>,
+    Closes: #191587
+  * Italian translation, thanks to Alessandro Dalvit <a_dalvit@katamail.com>,
+    Closes: #189495
+
+ -- Eduard Bloch <blade@debian.org>  Sun, 17 Aug 2003 16:55:51 +0200
+
+pppoeconf (0.9.10.9) unstable; urgency=low
+
+  * added fixes from Fabian Franz to use Xdialog, Suggests: xdialog
+  * updated es.po, thanks to Marcelo Ramos, closes: #187642
+  * updated pt_BR.po, thanks to Andre Luis Lopes, closes: #166551
+
+ -- Eduard Bloch <blade@debian.org>  Sun,  6 Apr 2003 15:27:07 +0200
+
+pppoeconf (0.9.10.8) unstable; urgency=low
+
+  * included Spanish translation, thanks to 
+    Marcelo Ramos <mramos@montevideo.com.uy>
+  * changed the connection invocation method
+  * updated help text for weird login names
+
+ -- Eduard Bloch <blade@debian.org>  Tue,  3 Sep 2002 22:31:10 +0200
+
+pppoeconf (0.9.10.7) unstable; urgency=low
+
+  * Fixing files without final newline automaticaly, closes: #153429
+  * Adding user data to chap-secrets too
+
+ -- Eduard Bloch <blade@debian.org>  Thu, 18 Jul 2002 16:08:53 +0200
+
+pppoeconf (0.9.10.6) unstable; urgency=low
+
+  * using a different pattern to detect Ethernet interfaces, should work with
+    USB-Adapters.
+
+ -- Eduard Bloch <blade@debian.org>  Tue,  2 Apr 2002 23:16:08 +0200
+
+pppoeconf (0.9.10.5) unstable; urgency=low
+
+  * fixed dependency on whiptail-provider
+
+ -- Eduard Bloch <blade@debian.org>  Thu,  7 Mar 2002 20:12:36 +0100
+
+pppoeconf (0.9.10.4) unstable; urgency=low
+
+  * removed a interface list building command, forgotten while merging with
+    0.9.10.2. Set fixed path to ifconfig and "-a" option to force listing all
+    existing devices. Closes: #121683
+  * wrote a basic manpage
+
+ -- Eduard Bloch <blade@debian.org>  Mon, 10 Dec 2001 09:59:52 +0100
+
+pppoeconf (0.9.10.3) unstable; urgency=low
+
+  * The why-do-people-allways-submit-patches-few-hours-after-last-release
+    release. Added pt_BR.po, thanks to Andre Luis Lopes. Closes: #122036
+
+ -- Eduard Bloch <blade@debian.org>  Sun,  2 Dec 2001 16:16:59 +0100
+
+pppoeconf (0.9.10.2) unstable; urgency=low
+
+  * now parsing ifconfig output to get interface names. procfs seems to
+    contain wrong information on some systems, Closes: #121683
+
+ -- Eduard Bloch <blade@debian.org>  Sat,  1 Dec 2001 17:29:01 +0100
+
+pppoeconf (0.9.10.1) unstable; urgency=low
+
+  * new prompts, more settings, better check for sane configuration 
+    (Closes: #120420) guaranteed clean up of the temp directory etc.
+  * updated german translation
+  * got updated french translation from Laurent Pelecq (thanks!), 
+    modified slightly
+
+ -- Eduard Bloch <blade@debian.org>  Tue, 27 Nov 2001 01:13:31 +0100
+
+pppoeconf (0.9.9-3) unstable; urgency=low
+
+  * MSS limit query implemented
+
+ -- Eduard Bloch <blade@debian.org>  Mon, 24 Sep 2001 03:01:44 +0200
+
+pppoeconf (0.9.9-2) unstable; urgency=low
+
+  * added a query about MSS size limitation
+
+ -- Eduard Bloch <blade@debian.org>  Mon, 24 Sep 2001 02:08:26 +0200
+
+pppoeconf (0.9.9-1) unstable; urgency=low
+
+  * distributing as an external package. Too complicated to keep in sync
+    with pppoe. Closes: #111270
+  * included a help screen in the script
+  * got french translation from Laurent Pelecq, thanks.
+
+ -- Eduard Bloch <blade@debian.org>  Wed, 19 Sep 2001 17:11:07 +0200
+
+pppoeconf (0.9-1) unstable; urgency=low
+
+  * New Release.
+  * using whiptail, less external dependencies
+  * more secure tempfile handling
+  * gettext support, german localisation || To Klaus: Der elegante Weg ;)
+  * created menu entry
+  * replaced rxvt with Terminal=true in pppoeconf.desktop 
+
+ -- Eduard Bloch <blade@debian.org>  Thu, 13 Sep 2001 13:36:18 +0200
+
+pppoeconf (0.5-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Klaus Knopper <knoppix@knopper.net>  Mon, 12 Sep 2001 00:24:42 +0200
